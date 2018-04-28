@@ -39,10 +39,97 @@
 			li {
 				border: 1px solid lightskyblue;
 			}
+			.selected {
+				background: red;
+			}
 		</style>
 		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			console.log($);
+			$(function () {
+				// 两种方式获取到的对象时不一样的  一个是$包装之后的对象 一个是document获取到的原生DOM元素
+				console.log($("#divid1"));
+				console.log($("#divid1").text());
+				console.log(document.getElementById('divid1'));
+				
+				// $提供了多种方法
+				
+				
+				console.log($('#divid1').length);
+				console.log($('div').length);
+				console.log($('.a').length);
+				console.log($('.b').length);
+				
+				console.log($('#divid1'));
+				console.log($('div'));
+				
+				console.log($('div')[0]);
+				console.log($('div')[1]);
+				
+				
+				
+				$("p").addClass("selected");
+				
+				
+				setTimeout(function () {
+					$("p").removeClass("selected");
+				}, 3000);
+				
+				
+				console.log($('p').html());
+				
+				console.log($('p').text());
+				
+				console.log($('p').val(), 'p -> val');
+				
+				console.log($('li').first().text());
+				
+				
+				$("p").append("<b>HelloHelloHelloHelloHelloHelloHelloHello</b>");
+				
+				
+				
+				
+				$("p").on("click", function(){
+					console.log(this);
+					alert( $(this).text() );
+				});
+				
+//				$("p").dblclick( function () { alert("Hello World!"); });
+				
+//				$("p").one("click", function(){
+//				  alert( $(this).text() );
+//				});
+//								
+//				$(window).resize(function(){
+//				  alert("Stop it!");
+//				});
+//				
+				var i = 0;
+				
+//				$(window).scroll( function() { 
+//					i++;
+//					console.log('scroll -> '+i);
+//				} );
+
+
+
+				$("p").hide();
+				
+				setTimeout(function () {
+					$("p").show();
+				}, 1500);
+				
+				
+				
+				$("#divid2").animate({ 
+			    width: "10%",
+			    fontSize: "20px", 
+			    borderWidth: 10
+			  }, 3000 ,function () {
+			  	alert('动画完成')
+			  });
+				
+			});
 		</script>
 	</head>
 	<body>
@@ -52,13 +139,13 @@
 		<div id="divid2">
 			divid2
 		</div>
-		<div id="divid3">
+		<div class="a" id="divid3">
 			divid3
 		</div>
-		<div class="divclass1">
+		<div class="a" class="divclass1">
 			divclass1
 		</div>
-		<div class="divclass2">
+		<div class="b" class="divclass2">
 			divclass2
 		</div>
 		<div class="divclass3">
