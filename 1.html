@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.body {
+				width: 500px;
+				height: 500px;
+				border: 1px solid blue;
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+			}
+			span {
+				display: block;
+				width: 500px;
+				height: 500px;
+				border: 1px dashed red;
+				float: left;
+				font-size: 30px;
+				line-height: 500px;
+				text-align: center;
+			}
+			.bodychildred {
+				width: 2510px;
+				height: 502px;
+				border: 2px dashed yellowgreen;
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: linear-gradient(to right,rgba(225,44,88, 0.1) , blue); 
+			}
+		</style>
+		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				var bodychildred = $('.bodychildred');
+				function go(i) {
+					
+					
+					console.log('该从第'+ i + '到第'+ (i+1));
+					if(i === 5) {
+						
+					 	bodychildred.animate({left: '0px' }, "easing", function() {
+					 		setTimeout(function() {
+					 			go(1);
+					 		}, 3000);
+					 		
+					 	});
+					 		
+					 	return;
+					 }
+					
+					 bodychildred.animate({left: (-500) * i + 'px' }, "slow", function () {
+					 		setTimeout(function() {
+					 			go( i + 1 );
+					 		}, 3000);
+					 });
+					 
+				};
+				
+
+				setTimeout(function() {
+					go(1);
+				}, 3000);
+				
+				bodychildred.on('mouseover', function() {
+					bodychildred.stop();
+				});
+				
+				bodychildred.on('mouseout', function() {
+					
+					
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="body">
+			
+			<div class="clearfix bodychildred">
+				<span>
+				1
+				</span>
+				<span>
+					2
+				</span>
+				<span>
+					3
+				</span>
+				<span>
+					4
+				</span>
+				<span>
+					5
+				</span>
+			</div>
+			
+		</div>
+	</body>
+</html>
