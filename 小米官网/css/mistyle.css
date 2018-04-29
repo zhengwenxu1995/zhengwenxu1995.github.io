@@ -14,8 +14,12 @@
 	height: 40px;
 	width: 1226px;
 	margin: 0 auto;
-	/*background: #333333;*/
+	background: #333333;
 }
+.nav{
+	position: relative;
+}
+
 .head_lnav{
 	float: left;
 	padding-left: 30px;
@@ -23,7 +27,7 @@
 	width: 400px;
 }
 .head_lnav li{
-	color: #424242;
+	color: #d66161;
 	display: block;
 	height: 40px;
 	line-height: 40px;
@@ -182,6 +186,26 @@
 	border-width: 1px;
 	border-color: #FF6700;
 }
+.mouseover_show{
+	list-style: none;
+}
+.mouseover_show li{
+	position: relative;
+	text-align: center;
+	margin-left: 10px;
+	float: left;
+}
+.mouseover_show li::before{
+	content: "";
+	display: inline-block;
+	height: 170px;
+	width: 0px;
+	position: absolute;
+	left: 150px;
+	top: 20px;
+	border: 1px solid #f1eded;
+}
+
 .cont_main{
 	position:relative;
 	margin: 0 auto;
@@ -214,7 +238,7 @@
 }
 .cont_menu li{
 	height: 42px;
-	
+	position: relative;
 }
 .cont_menu li a{
 	display: inline-block;

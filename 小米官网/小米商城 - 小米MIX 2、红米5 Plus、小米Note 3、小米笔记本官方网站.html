@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/mistyle.css">
     <link rel="stylesheet" href="font/iconfont.css">
     <script src="js/jquery-1.7.2.js"></script>
-     <script type="text/javascript" src="js/mi.js"></script>
+    <script type="text/javascript" src="js/mi.js"></script>
 </head>
 
 <body>
@@ -15,34 +15,76 @@
     <header class="header">
         <div class="head_div">
             <ul class="head_lnav">
-                <li><a href="">小米商城</a></li>
-                <li><span>|</span></li>
-                <li><a href="">MIUI</a></li>
-                <li><span>|</span></li>
-                <li><a href="">loT</a></li>
-                <li><span>|</span></li>
-                <li><a href="">云服务</a></li>
-                <li><span>|</span></li>
-                <li><a href="">水滴</a></li>
-                <li><span>|</span></li>
-                <li><a href="">金融</a></li>
-                <li><span>|</span></li>
-                <li><a href="">有品</a></li>
-                <li><span>|</span></li>
-                <li><a href="">Select Region</a></li>
+                <li>
+                    <a href="">小米商城</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">MIUI</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">loT</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">云服务</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">水滴</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">金融</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">有品</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">Select Region</a>
+                </li>
             </ul>
             <div class="shop_car">
                 <a class="shop_car_btn" href="#">购物车(0)</a>
-                <ul>
-                    <li><a href="">购物车中还没有商品，赶紧选购吧</a></li>
+                <ul id="shop_car_con">
+                    <li>
+                        <a href="">购物车中还没有商品，赶紧选购吧</a>
+                    </li>
                 </ul>
             </div>
             <ul class="login">
-                <li><a href="">消息通知</a></li>
-                <li><span>|</span></li>
-                <li><a href="">注册</a></li>
-                <li><span>|</span></li>
-                <li><a href="">登录</a></li>
+                <li>
+                    <a href="">消息通知</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">注册</a>
+                </li>
+                <li>
+                    <span>|</span>
+                </li>
+                <li>
+                    <a href="">登录</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -50,25 +92,119 @@
     <nav class="nav">
         <div class="nav_main">
             <a class="mi" href="">小米网</a>
-            <div class="nav_cont">
-                <ul class="nav_main_menu">
-                    <li><a href="">小米手机</a></li>
-                    <li><a href="">红米</a></li>
-                    <li><a href="">电视</a></li>
-                    <li><a href="">笔记本</a></li>
-                    <li><a href="">盒子</a></li>
-                    <li><a href="">新品</a></li>
-                    <li><a href="">路由器</a></li>
-                    <li><a href="">智能硬件</a></li>
-                    <li><a href="">服务</a></li>
-                    <li><a href="">社区</a></li>
-                </ul>
+                 <div class="show_menu" style="position: relative">
+                    <div class="show_list" style="display: none; z-index: 20; position: absolute; top: 98px; height: 229px; width: 100%;border-top: 2px solid #eee;background: #ffff;box-shadow: 0px 5px 10px #ccc ">
+                            <div style="height: 229px;width: 1226px;margin: 0 auto;">
+                                <ul class="mouseover_show">
+                                    <li>
+                                        <div style="margin-top: 3px; ">
+                                            <span style="color: #ff6700; padding: 1px 20px;border:1px solid #ff6700;">热卖</span>
+                                        </div>
+                
+                                        <a href="#" style="text-decoration:none; display:block; margin-top: 10px;">
+                                            <img src="img/mix2s320-220white.png" width="160" height="110" alt="">
+                                            <p style="margin-top: 10px; text-align: center">
+                                                小米手机
+                                            </p>
+                                        </a>
+                                        <div style="margin-top:10px; ">
+                                            <span style="color:#ff6700;font-size: 12px;">3299起</span>
+                                        </div>
+                
+                                    </li>
+                                    <li>
+                                        <div style="margin-top: 3px; ">
+                                            <span style="color: #ff6700; padding: 1px 20px;border:1px solid #ff6700;">热卖</span>
+                                        </div>
+                
+                                        <a href="#" style="text-decoration:none; display:block; margin-top: 10px;">
+                                            <img src="img/mix2s320-220white.png" width="160" height="110" alt="">
+                                            <p style="margin-top: 10px; text-align: center">
+                                                小米手机
+                                            </p>
+                                        </a>
+                                        <div style="margin-top:10px; ">
+                                            <span style="color:#ff6700;font-size: 12px;">3299起</span>
+                                        </div>
+                
+                                    </li>
+                                    <li>
+                                        <div style="margin-top: 3px; ">
+                                            <span style="color: #ff6700; padding: 1px 20px;border:1px solid #ff6700;">热卖</span>
+                                        </div>
+                
+                                        <a href="#" style="text-decoration:none; display:block; margin-top: 10px;">
+                                            <img src="img/mix2s320-220white.png" width="160" height="110" alt="">
+                                            <p style="margin-top: 10px; text-align: center">
+                                                小米手机
+                                            </p>
+                                        </a>
+                                        <div style="margin-top:10px; ">
+                                            <span style="color:#ff6700;font-size: 12px;">3299起</span>
+                                        </div>
+                
+                                    </li>
+                                    <li>
+                                        <div style="margin-top: 3px; ">
+                                            <span style="color: #ff6700; padding: 1px 20px;border:1px solid #ff6700;">热卖</span>
+                                        </div>
+                
+                                        <a href="#" style="text-decoration:none; display:block; margin-top: 10px;">
+                                            <img src="img/mix2s320-220white.png" width="160" height="110" alt="">
+                                            <p style="margin-top: 10px; text-align: center">
+                                                小米手机
+                                            </p>
+                                        </a>
+                                        <div style="margin-top:10px; ">
+                                            <span style="color:#ff6700;font-size: 12px;">3299起</span>
+                                        </div>
+                
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav_cont">
+                                <ul class="nav_main_menu">
+                                    <li class="shouji" >
+                                        <a href="">小米手机</a>
+                                    </li>
+                                    <li>
+                                        <a href="">红米</a>
+                                    </li>
+                                    <li>
+                                        <a href="">电视</a>
+                                    </li>
+                                    <li>
+                                        <a href="">笔记本</a>
+                                    </li>
+                                    <li>
+                                        <a href="">盒子</a>
+                                    </li>
+                                    <li>
+                                        <a href="">新品</a>
+                                    </li>
+                                    <li>
+                                        <a href="">路由器</a>
+                                    </li>
+                                    <li>
+                                        <a href="">智能硬件</a>
+                                    </li>
+                                    <li>
+                                        <a href="">服务</a>
+                                    </li>
+                                    <li>
+                                        <a href="">社区</a>
+                                    </li>
+                                </ul>
+                            </div>
             </div>
+           
             <div class="search">
                 <input type="search" name="search" class="search_frame">
                 <input type="button" class="btn_search" name="button">
             </div>
         </div>
+        
     </nav>
     <!-- 这是内容 -->
     <article class="cont">
@@ -76,25 +212,89 @@
             <div class="cont_top">
                 <div class="cont_top_back"></div>
                 <ul class="cont_menu">
-                    <li><a href="">手机&nbsp;电话卡</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">电视&nbsp;盒子</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">笔记本</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">智能&nbsp;家电</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">健康&nbsp;家居</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">出行&nbsp;儿童</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">路由器&nbsp;手机配件</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">移动电源&nbsp;插线板</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">耳机&nbsp;音像</a><i class="iconfont icon-arrowright"></i></li>
-                    <li><a href="">生活&nbsp;米兔</a><i class="iconfont icon-arrowright"></i></li>
+                    <li>
+                        <a href="">手机&nbsp;电话卡</a>
+                        <i class="iconfont icon-arrowright"></i>
+                        <div style="position: absolute;">
+                              <ul>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                                  <li><i style="height: 10px;width: 10px;display:block;background: url(img/navimg.png)"></i><a href="">手机啊手机</a></li>
+                              </ul>  
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">电视&nbsp;盒子</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
+                    <li>
+                        <a href="">笔记本</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
+                    <li>
+                        <a href="">智能&nbsp;家电</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
+                    <li>
+                        <a href="">健康&nbsp;家居</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
+                    <li>
+                        <a href="">出行&nbsp;儿童</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
+                    <li>
+                        <a href="">路由器&nbsp;手机配件</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
+                    <li>
+                        <a href="">移动电源&nbsp;插线板</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
+                    <li>
+                        <a href="">耳机&nbsp;音像</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
+                    <li>
+                        <a href="">生活&nbsp;米兔</a>
+                        <i class="iconfont icon-arrowright"></i>
+                    </li>
                 </ul>
             </div>
-            <div class="cont_bottom" >
+            <div class="cont_bottom">
                 <ul class="cont_img" id="img_list">
-                    <li class="image_list show"><a href=""><img src="img/xmad_15199022255582_tPcaG.jpg"></a></li>
-                    <li class="image_list"><a href=""><img src="img/xmad_15199998943658_TifXb.jpg"></a></li>
-                    <li class="image_list"><a href="img/xmad_15200002256901_QuJRw.jpg"><img src=""></a></li>
-                    <li class="image_list"><a href=""><img src="img/xmad_15200003391394_xVwbj.jpg"></a></li>
-                    <li class="image_list"><a href=""><img src="img/7db7a7b1fe0e6b944f7dd351c86184b0_T1a5JjBbVT1RXrhCrK.jpg"></a></li>
+                    <li class="image_list show">
+                        <a href="">
+                            <img src="img/xmad_15199022255582_tPcaG.jpg">
+                        </a>
+                    </li>
+                    <li class="image_list">
+                        <a href="">
+                            <img src="img/xmad_15199998943658_TifXb.jpg">
+                        </a>
+                    </li>
+                    <li class="image_list">
+                        <a href="img/xmad_15200002256901_QuJRw.jpg">
+                            <img src="">
+                        </a>
+                    </li>
+                    <li class="image_list">
+                        <a href="">
+                            <img src="img/xmad_15200003391394_xVwbj.jpg">
+                        </a>
+                    </li>
+                    <li class="image_list">
+                        <a href="">
+                            <img src="img/7db7a7b1fe0e6b944f7dd351c86184b0_T1a5JjBbVT1RXrhCrK.jpg">
+                        </a>
+                    </li>
                 </ul>
                 <a href="javascript:;" id="lbtn" onclick=""></a>
                 <a href="javascript:;" id="rbtn"></a>
@@ -110,19 +310,49 @@
         <div class="cont_chose">
             <div class="chose_menu">
                 <ul>
-                    <li><a href=""><i class="iconfont icon-7"></i>选购手机</a></li>
-                    <li class="exposure1"><a href=""><i class="iconfont icon-fahuobz"></i>选购手机</a></li>
-                    <li class="exposure1"><a href=""><i class="iconfont icon-liwu"></i>选购手机</a></li>
-                    <li class="exposure"><a href=""><i class="iconfont icon-time"></i>选购手机</a></li>
-                    <li class="exposure exposure1"><a href=""><i class="iconfont icon-xiaoxizhongxin"></i>选购手机</a></li>
-                    <li class="exposure exposure1"><a href=""><i class="iconfont icon-tuihuobaozhang"></i>选购手机</a></li>
+                    <li>
+                        <a href="">
+                            <i class="iconfont icon-7"></i>选购手机</a>
+                    </li>
+                    <li class="exposure1">
+                        <a href="">
+                            <i class="iconfont icon-fahuobz"></i>选购手机</a>
+                    </li>
+                    <li class="exposure1">
+                        <a href="">
+                            <i class="iconfont icon-liwu"></i>选购手机</a>
+                    </li>
+                    <li class="exposure">
+                        <a href="">
+                            <i class="iconfont icon-time"></i>选购手机</a>
+                    </li>
+                    <li class="exposure exposure1">
+                        <a href="">
+                            <i class="iconfont icon-xiaoxizhongxin"></i>选购手机</a>
+                    </li>
+                    <li class="exposure exposure1">
+                        <a href="">
+                            <i class="iconfont icon-tuihuobaozhang"></i>选购手机</a>
+                    </li>
                 </ul>
             </div>
             <div class="chose">
                 <ul>
-                    <li><a href=""><img src="img/xmad_15054028734518_onbVl.jpg"></a></li>
-                    <li><a href=""><img src="img/xmad_15148901270657_IObvL.jpg"></a></li>
-                    <li> <a href=""><img src="img/xmad_15194365107789_SyNqu.jpg"></a></li>
+                    <li>
+                        <a href="">
+                            <img src="img/xmad_15054028734518_onbVl.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/xmad_15148901270657_IObvL.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/xmad_15194365107789_SyNqu.jpg">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -131,8 +361,12 @@
             <div class="midodge_top">
                 <h2>小米闪购</h2>
                 <div class="midodge_btn">
-                    <a href=""><i class="iconfont icon-arrowleft midodge_btn_show"></i></a>
-                    <a href=""><i class="iconfont icon-arrowright"></i></a>
+                    <a href="">
+                        <i class="iconfont icon-arrowleft midodge_btn_show"></i>
+                    </a>
+                    <a href="">
+                        <i class="iconfont icon-arrowright"></i>
+                    </a>
                 </div>
             </div>
             <div class="midodge_botton">
@@ -151,125 +385,149 @@
                 <div class="goods">
                     <div class="goods_item">
                         <ul class="goods_chose" id="goods_chose">
-                            <li class="item "><a href=""><img src="img/mimix.png" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
-                            </li>
-                            <li class="item "><a href=""><img src="img/mimix.png" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
-                            </li>
-                            <li class="item "><a href=""><img src="img/mimix.png" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
-                            </li>
-                            <li class="item "><a href=""><img src="img/mimix.png" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
-                            </li>
                             <li class="item ">
-                                <a href=""> <img src="img/mimixt.jpg" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
-                            </li>
-                            <li class="item ">
-                                <a href=""> <img src="img/mimixt.jpg" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
-                            </li>
-                            <li class="item ">
-                                <a href=""> <img src="img/mimixt.jpg" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
-                            </li>
-                            <li class="item ">
-                                <a href=""> <img src="img/mimixt.jpg" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
+                                <a href="">
+                                    <img src="img/mimix.png" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
                             </li>
                             <li class="item ">
                                 <a href="">
-                                <img src="img/minonte3.jpg" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
+                                    <img src="img/mimix.png" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
                             </li>
                             <li class="item ">
                                 <a href="">
-                                <img src="img/minonte3.jpg" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
+                                    <img src="img/mimix.png" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
                             </li>
                             <li class="item ">
                                 <a href="">
-                                <img src="img/minonte3.jpg" alt="">
-                           <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
+                                    <img src="img/mimix.png" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
                             </li>
                             <li class="item ">
                                 <a href="">
-                                <img src="img/minonte3.jpg" alt="">
-                            <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
-                            <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
-                            <p  class="money">
-                                <span class="now_cost">2999&nbsp;元</span>
-                                &nbsp;
-                                <span class="pri_cost">3299元</span>
-                            </p></a>
+                                    <img src="img/mimixt.jpg" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="item ">
+                                <a href="">
+                                    <img src="img/mimixt.jpg" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="item ">
+                                <a href="">
+                                    <img src="img/mimixt.jpg" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="item ">
+                                <a href="">
+                                    <img src="img/mimixt.jpg" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="item ">
+                                <a href="">
+                                    <img src="img/minonte3.jpg" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="item ">
+                                <a href="">
+                                    <img src="img/minonte3.jpg" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="item ">
+                                <a href="">
+                                    <img src="img/minonte3.jpg" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="item ">
+                                <a href="">
+                                    <img src="img/minonte3.jpg" alt="">
+                                    <h3>小米MIX 2 6GB+64GB 黑色陶瓷</h3>
+                                    <p class="parameter">5.99"全面屏，骁龙835处理器 </p>
+                                    <p class="money">
+                                        <span class="now_cost">2999&nbsp;元</span>
+                                        &nbsp;
+                                        <span class="pri_cost">3299元</span>
+                                    </p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -278,7 +536,9 @@
         </div>
         <!-- 闪购结束 -->
         <div class="midodge_end">
-            <a href=""><img src="img/jikapian.jpg"></a>
+            <a href="">
+                <img src="img/jikapian.jpg">
+            </a>
         </div>
         <div id="shopstar">
             <!-- 手机开始 -->
@@ -286,70 +546,114 @@
                 <div class="shopphone_top">
                     <h2>手机</h2>
                     <div class="shopphone_btn">
-                        <a href="">查看全部<i class="iconfont icon-arrowright"></i></a>
+                        <a href="">查看全部
+                            <i class="iconfont icon-arrowright"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="shopphoen_bottom">
                     <div class="shopphoen_img">
-                        <a href=""><img src="img/note.jpg"></a>
+                        <a href="">
+                            <img src="img/note.jpg">
+                        </a>
                     </div>
                     <div class="shopphoen_chose">
                         <ul class="show">
                             <li>
                                 <span class="subtract">减200元</span>
-                                <a href=""><img src="img/xiaomi6.jpg" alt="">
-                                <h2>小米 6 4GB+64GB</h2>
-                                <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p></a>
-                                <p><span class="shopphone_cut">2099元</span>&nbsp;<span class="shopphone_script">2299元</span></p>
+                                <a href="">
+                                    <img src="img/xiaomi6.jpg" alt="">
+                                    <h2>小米 6 4GB+64GB</h2>
+                                    <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p>
+                                </a>
+                                <p>
+                                    <span class="shopphone_cut">2099元</span>&nbsp;
+                                    <span class="shopphone_script">2299元</span>
+                                </p>
                             </li>
                             <li>
                                 <span class="subtract">减200元</span>
-                                <a href=""><img src="img/xiaomi6.jpg" alt="">
-                                <h2>小米 6 4GB+64GB</h2>
-                                <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p></a>
-                                <p><span class="shopphone_cut">2099元</span>&nbsp;<span class="shopphone_script">2299元</span></p>
+                                <a href="">
+                                    <img src="img/xiaomi6.jpg" alt="">
+                                    <h2>小米 6 4GB+64GB</h2>
+                                    <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p>
+                                </a>
+                                <p>
+                                    <span class="shopphone_cut">2099元</span>&nbsp;
+                                    <span class="shopphone_script">2299元</span>
+                                </p>
                             </li>
                             <li>
                                 <span class="subtract">减200元</span>
-                                <a href=""><img src="img/xiaomi6.jpg" alt="">
-                                <h2>小米 6 4GB+64GB</h2>
-                                <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p></a>
-                                <p><span class="shopphone_cut">2099元</span>&nbsp;<span class="shopphone_script">2299元</span></p>
+                                <a href="">
+                                    <img src="img/xiaomi6.jpg" alt="">
+                                    <h2>小米 6 4GB+64GB</h2>
+                                    <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p>
+                                </a>
+                                <p>
+                                    <span class="shopphone_cut">2099元</span>&nbsp;
+                                    <span class="shopphone_script">2299元</span>
+                                </p>
                             </li>
                             <li>
                                 <span class="subtract">减200元</span>
-                                <a href=""><img src="img/xiaomi6.jpg" alt="">
-                                <h2>小米 6 4GB+64GB</h2>
-                                <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p></a>
-                                <p><span class="shopphone_cut">2099元</span>&nbsp;<span class="shopphone_script">2299元</span></p>
+                                <a href="">
+                                    <img src="img/xiaomi6.jpg" alt="">
+                                    <h2>小米 6 4GB+64GB</h2>
+                                    <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p>
+                                </a>
+                                <p>
+                                    <span class="shopphone_cut">2099元</span>&nbsp;
+                                    <span class="shopphone_script">2299元</span>
+                                </p>
                             </li>
                             <li class="shopphoen_chose_odd">
                                 <span class="subtract">减200元</span>
-                                <a href=""> <img src="img/xiaomi6.jpg" alt="">
-                                <h2>小米 6 4GB+64GB</h2>
-                                <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p></a>
-                                <p><span class="shopphone_cut">2099元</span>&nbsp;<span class="shopphone_script">2299元</span></p>
+                                <a href="">
+                                    <img src="img/xiaomi6.jpg" alt="">
+                                    <h2>小米 6 4GB+64GB</h2>
+                                    <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p>
+                                </a>
+                                <p>
+                                    <span class="shopphone_cut">2099元</span>&nbsp;
+                                    <span class="shopphone_script">2299元</span>
+                                </p>
                             </li>
                             <li class="shopphoen_chose_odd">
                                 <span class="subtract">减200元</span>
-                                <a href=""> <img src="img/xiaomi6.jpg" alt="">
-                                <h2>小米 6 4GB+64GB</h2>
-                                <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p></a>
-                                <p><span class="shopphone_cut">2099元</span>&nbsp;<span class="shopphone_script">2299元</span></p>
+                                <a href="">
+                                    <img src="img/xiaomi6.jpg" alt="">
+                                    <h2>小米 6 4GB+64GB</h2>
+                                    <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p>
+                                </a>
+                                <p>
+                                    <span class="shopphone_cut">2099元</span>&nbsp;
+                                    <span class="shopphone_script">2299元</span>
+                                </p>
                             </li>
                             <li class="shopphoen_chose_odd">
                                 <span class="subtract">减200元</span>
-                                <a href=""> <img src="img/xiaomi6.jpg" alt="">
-                                <h2>小米 6 4GB+64GB</h2>
-                                <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p></a>
-                                <p><span class="shopphone_cut">2099元</span>&nbsp;<span class="shopphone_script">2299元</span></p>
+                                <a href="">
+                                    <img src="img/xiaomi6.jpg" alt="">
+                                    <h2>小米 6 4GB+64GB</h2>
+                                    <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p>
+                                </a>
+                                <p>
+                                    <span class="shopphone_cut">2099元</span>&nbsp;
+                                    <span class="shopphone_script">2299元</span>
+                                </p>
                             </li>
                             <li class="shopphoen_chose_odd">
                                 <span class="subtract">减200元</span>
-                                <a href=""> <img src="img/xiaomi6.jpg" alt="">
-                                <h2>小米 6 4GB+64GB</h2>
-                                <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p></a>
-                                <p><span class="shopphone_cut">2099元</span>&nbsp;<span class="shopphone_script">2299元</span></p>
+                                <a href="">
+                                    <img src="img/xiaomi6.jpg" alt="">
+                                    <h2>小米 6 4GB+64GB</h2>
+                                    <p class="shopphone_pres">边角双摄，4轴防抖，骁龙835处理器</p>
+                                </a>
+                                <p>
+                                    <span class="shopphone_cut">2099元</span>&nbsp;
+                                    <span class="shopphone_script">2299元</span>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -357,7 +661,9 @@
             </div>
             <!-- 手机结束 -->
             <div class="shopphone_end">
-                <a href=""><img src="img/miav4a.jpg" alt=""></a>
+                <a href="">
+                    <img src="img/miav4a.jpg" alt="">
+                </a>
             </div>
             <!-- 家电 -->
             <div class="household">
@@ -365,414 +671,590 @@
                     <h2>家电</h2>
                     <div class="household_btn">
                         <ul id="household_btn_menu">
-                            <li><a class="show_bot_line" href="">热门</a></li>
-                            <li><a href="">电视影音</a></li>
-                            <li><a href="">电脑</a></li>
-                            <li><a href="">家居</a></li>
+                            <li>
+                                <a class="show_bot_line" href="">热门</a>
+                            </li>
+                            <li>
+                                <a href="">电视影音</a>
+                            </li>
+                            <li>
+                                <a href="">电脑</a>
+                            </li>
+                            <li>
+                                <a href="">家居</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="household_bottom">
                     <div class="household_bottom_left">
                         <ul>
-                            <li class="top"><a href=""><img src="img/misao.jpg" alt=""></a></li>
-                            <li><a href=""><img src="img/mibao.jpg" alt=""></a></li>
+                            <li class="top">
+                                <a href="">
+                                    <img src="img/misao.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="img/mibao.jpg" alt="">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="household_bottom_right">
                         <ul class="household_show">
-                            <li><a href="">
+                            <li>
+                                <a href="">
                                     <img src="img/mi4a40.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span class="household_cut">999元</span>&nbsp;<span class="household_script">1199元</span></p>
+                                    <p>
+                                        <span class="household_cut">999元</span>&nbsp;
+                                        <span class="household_script">1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mi4a40.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mi4a40.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li class="household_goods"><a href="">
+                                </a>
+                            </li>
+                            <li class="household_goods">
+                                <a href="">
                                     <img src="img/mi4a40.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mi4a40.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mi4a40.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mi4a40.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li class="household_goods"><a href="">
+                                </a>
+                            </li>
+                            <li class="household_goods">
+                                <a href="">
                                     <img src="img/mi4a40.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
                         <ul class="household_nshow">
-                            <li><a href="">
+                            <li>
+                                <a href="">
                                     <img src="img/mibi13.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span class="household_cut">999元</span>&nbsp;<span class="household_script">1199元</span></p>
+                                    <p>
+                                        <span class="household_cut">999元</span>&nbsp;
+                                        <span class="household_script">1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mibi13.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mibi13.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li class="household_goods"><a href="">
+                                </a>
+                            </li>
+                            <li class="household_goods">
+                                <a href="">
                                     <img src="img/mibi13.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mibi13.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mibi13.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mibi13.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li class="household_goods"><a href="">
+                                </a>
+                            </li>
+                            <li class="household_goods">
+                                <a href="">
                                     <img src="img/mibi13.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
 
                         <ul class="household_nshow">
-                            <li><a href="">
+                            <li>
+                                <a href="">
                                     <img src="img/midian15.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span class="household_cut">999元</span>&nbsp;<span class="household_script">1199元</span></p>
+                                    <p>
+                                        <span class="household_cut">999元</span>&nbsp;
+                                        <span class="household_script">1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/midian15.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/midian15.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li class="household_goods"><a href="">
+                                </a>
+                            </li>
+                            <li class="household_goods">
+                                <a href="">
                                     <img src="img/midian15.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/midian15.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/midian15.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/midian15.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li class="household_goods"><a href="">
+                                </a>
+                            </li>
+                            <li class="household_goods">
+                                <a href="">
                                     <img src="img/midian15.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
-    
+
                         <ul class="household_nshow">
-                            <li><a href="">
+                            <li>
+                                <a href="">
                                     <img src="img/mishui.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span class="household_cut">999元</span>&nbsp;<span class="household_script">1199元</span></p>
+                                    <p>
+                                        <span class="household_cut">999元</span>&nbsp;
+                                        <span class="household_script">1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mishui.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mishui.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li class="household_goods"><a href="">
+                                </a>
+                            </li>
+                            <li class="household_goods">
+                                <a href="">
                                     <img src="img/mishui.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mishui.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mishui.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li><a href="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     <img src="img/mishui.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
-                            <li class="household_goods"><a href="">
+                                </a>
+                            </li>
+                            <li class="household_goods">
+                                <a href="">
                                     <img src="img/mishui.jpg" alt="">
                                     <h2>小米电视4A&nbsp;32英寸</h2>
                                     <p class="household_par">64位四核处理器/1GB+4GB大内存</p>
-                                    <p><span>999元</span>&nbsp;<span>1199元</span></p>
+                                    <p>
+                                        <span>999元</span>&nbsp;
+                                        <span>1199元</span>
+                                    </p>
                                     <div class="household_mouse ">
                                         <p>
                                             我们家都觉得很kiang（不懂了吧，汕尾话！很优秀！！）
                                         </p>
                                         <span>来自&nbsp;刘勇的评价</span>
                                     </div>
-                                </a></li>
+                                </a>
+                            </li>
                         </ul>
 
 
@@ -781,7 +1263,9 @@
                 </div>
             </div>
             <div class="household_end">
-                <a href=""><img src="img/yashua.jpg" alt=""></a>
+                <a href="">
+                    <img src="img/yashua.jpg" alt="">
+                </a>
             </div>
         </div>
     </article>
@@ -791,53 +1275,104 @@
             <div class="footer_top">
                 <div class="footer_top1">
                     <ul>
-                        <li><a href=""><i class="iconfont icon-wxbgongju"></i>预约维修</a></li>
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-wxbgongju"></i>预约维修</a>
+                        </li>
                         <li>|</li>
-                        <li><a href=""><i class="iconfont icon-7tiantuihuo"></i>7天无理由退货</a></li>
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-7tiantuihuo"></i>7天无理由退货</a>
+                        </li>
                         <li>|</li>
-                        <li><a href=""><i class="iconfont icon-15tianbaohuan"></i>15天免费换货</a></li>
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-15tianbaohuan"></i>15天免费换货</a>
+                        </li>
                         <li>|</li>
-                        <li><a href=""><i class="iconfont icon-liwu"></i>满150包邮</a></li>
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-liwu"></i>满150包邮</a>
+                        </li>
                         <li>|</li>
-                        <li><a href=""><i class="iconfont icon-wxbdingwei"></i>520余家售后网店</a></li>
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-wxbdingwei"></i>520余家售后网店</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer_top2">
                     <dl>
                         <dt>帮助中心</dt>
-                        <dd><a href="">账户管理</a></dd>
-                        <dd><a href="">购物指南</a></dd>
-                        <dd><a href="">订单操作</a></dd>
+                        <dd>
+                            <a href="">账户管理</a>
+                        </dd>
+                        <dd>
+                            <a href="">购物指南</a>
+                        </dd>
+                        <dd>
+                            <a href="">订单操作</a>
+                        </dd>
                     </dl>
                     <dl>
                         <dt>服务支持</dt>
-                        <dd><a href="">账户管理</a></dd>
-                        <dd><a href="">购物指南</a></dd>
-                        <dd><a href="">订单操作</a></dd>
+                        <dd>
+                            <a href="">账户管理</a>
+                        </dd>
+                        <dd>
+                            <a href="">购物指南</a>
+                        </dd>
+                        <dd>
+                            <a href="">订单操作</a>
+                        </dd>
                     </dl>
                     <dl>
                         <dt>下线门店</dt>
-                        <dd><a href="">账户管理</a></dd>
-                        <dd><a href="">购物指南</a></dd>
-                        <dd><a href="">订单操作</a></dd>
+                        <dd>
+                            <a href="">账户管理</a>
+                        </dd>
+                        <dd>
+                            <a href="">购物指南</a>
+                        </dd>
+                        <dd>
+                            <a href="">订单操作</a>
+                        </dd>
                     </dl>
                     <dl>
                         <dt>关于小米</dt>
-                        <dd><a href="">账户管理</a></dd>
-                        <dd><a href="">购物指南</a></dd>
-                        <dd><a href="">订单操作</a></dd>
+                        <dd>
+                            <a href="">账户管理</a>
+                        </dd>
+                        <dd>
+                            <a href="">购物指南</a>
+                        </dd>
+                        <dd>
+                            <a href="">订单操作</a>
+                        </dd>
                     </dl>
                     <dl>
                         <dt>关注我们</dt>
-                        <dd><a href="">账户管理</a></dd>
-                        <dd><a href="">购物指南</a></dd>
-                        <dd><a href="">订单操作</a></dd>
+                        <dd>
+                            <a href="">账户管理</a>
+                        </dd>
+                        <dd>
+                            <a href="">购物指南</a>
+                        </dd>
+                        <dd>
+                            <a href="">订单操作</a>
+                        </dd>
                     </dl>
                     <dl>
                         <dt>特色服务</dt>
-                        <dd><a href="">账户管理</a></dd>
-                        <dd><a href="">购物指南</a></dd>
-                        <dd><a href="">订单操作</a></dd>
+                        <dd>
+                            <a href="">账户管理</a>
+                        </dd>
+                        <dd>
+                            <a href="">购物指南</a>
+                        </dd>
+                        <dd>
+                            <a href="">订单操作</a>
+                        </dd>
                     </dl>
                     <div class="phoen_n">
                         <p class="phone">400-100-5678</p>
@@ -855,33 +1390,62 @@
                 <img src="img/log.png">
                 <div class="mi_cont">
                     <ul class="mi_menu">
-                        <li><a href="">小米商城</a></li>
+                        <li>
+                            <a href="">小米商城</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">MIUI</a></li>
+                        <li>
+                            <a href="">MIUI</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">米家</a></li>
+                        <li>
+                            <a href="">米家</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">米聊</a></li>
+                        <li>
+                            <a href="">米聊</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">多看</a></li>
+                        <li>
+                            <a href="">多看</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">路由器</a></li>
+                        <li>
+                            <a href="">路由器</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">米粉卡</a></li>
+                        <li>
+                            <a href="">米粉卡</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">小米天猫店</a></li>
+                        <li>
+                            <a href="">小米天猫店</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">隐私政策</a></li>
+                        <li>
+                            <a href="">隐私政策</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">问题反馈</a></li>
+                        <li>
+                            <a href="">问题反馈</a>
+                        </li>
                         <li>|</li>
-                        <li><a href="">Select&nbsp;Region</a></li>
+                        <li>
+                            <a href="">Select&nbsp;Region</a>
+                        </li>
                     </ul>
                     <ul class="mi_cer">
-                        <li>&copy;<a href="">mi.com</a>京ICP证110507号</li>
-                        <li><a href="">京ICP备10046444号</a></li>
-                        <li><a href="">京公网安备11010802020134号</a></li>
-                        <li><a href="">京网文[2014]0059-0009号</a></li>
+                        <li>&copy;
+                            <a href="">mi.com</a>京ICP证110507号</li>
+                        <li>
+                            <a href="">京ICP备10046444号</a>
+                        </li>
+                        <li>
+                            <a href="">京公网安备11010802020134号</a>
+                        </li>
+                        <li>
+                            <a href="">京网文[2014]0059-0009号</a>
+                        </li>
                     </ul>
                     <br>
                     <p>
@@ -889,18 +1453,28 @@
                     </p>
                 </div>
                 <ul class="mi_log">
-                    <li><img src="img/truste.png" alt=""></li>
-                    <li><img src="img/v-logo-1.png" alt=""></li>
-                    <li><img src="img/v-logo-2.png" alt=""></li>
-                    <li><img src="img/v-logo-3.png" alt=""></li>
-                    <li><img src="img/truste.png" alt=""></li>
+                    <li>
+                        <img src="img/truste.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/v-logo-1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/v-logo-2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/v-logo-3.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/truste.png" alt="">
+                    </li>
                 </ul>
                 <h2 class="font_mi">探索黑科技，小米为发烧而生！</h2>
             </div>
         </div>
     </footer>
-       <script src="js/jquery-1.7.2.js"></script>
-     <script type="text/javascript" src="js/mi.js"></script>
+    <script src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/mi.js"></script>
 </body>
 
 </html>
