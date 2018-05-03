@@ -2,7 +2,7 @@
 	<head>
 		<title></title>
 		<meta charset="utf-8">
-		<link rel="shortcut icon" href="http://www.bootcdn.cn/assets/ico/favicon.ico">
+		<!-- <link rel="shortcut icon" href="http://www.bootcdn.cn/assets/ico/favicon.ico"> -->
 		<style type="text/css">
 			div {
 				width: 100%;
@@ -44,6 +44,44 @@
 			}
 		</style>
 		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+		<!-- 异步加载  defer ie6以下的的异步加载    async是ie9以上的以及其他浏览器支持的 -->
+		<!-- 使用DOM实现异步加载
+			function scriptOnload(url,callBack){
+				var script=document.createElement("script");
+			script.type="text/javascript";
+			sctipt.src=url；执行完src后会异步加载 js文件
+			if(script.onload){
+				script.onload=function（）{
+				除ie以外都支持
+			}
+			}else{
+					ie使用  script.onreadyState=function（）{
+					if（script。reasyState==“complete”||script.readyState=="loaded"）{
+						要执行的方法
+					}
+				}
+			}
+			sctipt.src="js文件";
+			
+			document.head.appendChild(script);  插入文档才会执行
+			}
+			function scriptOnload(js文件地址,function（）{
+				test（）；
+			})
+
+
+			document.addEventListener('DOMContentLoade',function (){
+
+			},false);   ===  jquery 中的   $（document）.ready(function (){
+
+			});  ===$(function (){
+				
+			});
+
+
+		-->
 		<script type="text/javascript">
 			$(function () {
 				// 两种方式获取到的对象时不一样的  一个是$包装之后的对象 一个是document获取到的原生DOM元素
@@ -113,22 +151,30 @@
 
 
 
-				$("p").hide();
+			// 	$("p").hide();
 				
-				setTimeout(function () {
-					$("p").show();
-				}, 1500);
+			// 	setTimeout(function () {
+			// 		$("p").show();
+			// 	}, 1500);
 				
 				
 				
-				$("#divid2").animate({ 
-			    width: "10%",
-			    fontSize: "20px", 
-			    borderWidth: 10
-			  }, 3000 ,function () {
-			  	alert('动画完成')
-			  });
-				
+			// 	$("#divid2").animate({ 
+			//     width: "10%",
+			//     fontSize: "20px", 
+			//     borderWidth: 10
+			//   }, 3000 ,function () {
+			//   	alert('动画完成')
+			//   });
+
+				$(".up>div").mouseover(function (){
+					$(".up>div").css({"box-shadow":"0 0 10px #F0f","top":"49px"});
+				}
+				);
+				$(".up>div").mouseout(function (){
+					$(".up>div").css({"box-shadow":"0 0 0px rgba(255,255,255,0.3)","top":"50px"});
+				}
+				);
 			});
 		</script>
 	</head>
@@ -169,7 +215,9 @@
 			<li>4 git commit -m 'xxxx' 添加到本地仓库(本地硬盘中 git自己划分的一块小硬盘区域)</li>
 			<li>5 git push 提到到远程</li>
 		</ul>
-		
+		<div class="up" style="background: #000; border:5px solid #f000;height: 300px;width: 800px; position: relative">
+			 <div style="height: 100px;width: 100px; border: 1px solid #888;position: absolute;background: #fff;left: 300px;top: 50px;"></div>
+		</div>
 
 		
 		

@@ -140,11 +140,13 @@
 	color: #FF6700;
 }
 .all_shop_show{
-	/*width: 234px;*/
+	width: 234px;
 	height: 460px;
 	border: 1px solid #f00;
 	position: absolute;
+	z-index: 10;
 	bottom: -462px;
+	background: #fff;
 	left: -55px;
 	display: none;
 }
@@ -153,26 +155,26 @@
 	width: 234px;
 	padding: 15px 0;
 }
-.cont_menu li{
+.cont_menu .item_list_menu{
 	/*margin: 0px;*/
 	padding-left: 40px;
 	height: 43px;
 	line-height: 43px;
 }
-.cont_menu li i{
+.cont_menu .item_list_menu i{
 	float: right;
 	padding-right: 20px;
 }
-.cont_menu li:hover{
+.cont_menu .item_list_menu:hover{
 	background:#ff6700;
 }
-.cont_menu li a{
+.cont_menu .item_list_menu a{
 	display: inline-block;
 	height: 43px;
 	width: 140px;
 	
 }
-.cont_menu li a:hover{
+.cont_menu .item_list_menu a:hover{
 	color: #fff;	
 }
 .nav_main_menu{
@@ -245,8 +247,7 @@
 	list-style: none;
 	position: absolute;
 	width: 1226px;
-	z-index: 1;
-	display: none;
+	/* display: none; */
 }
 .cont_reveal div a img{
 	height: 620px;
@@ -263,8 +264,7 @@
 	float: none; list-style: none;
 	position: absolute;
 	width: 1226px;
-	z-index: 1;
-	display: none;
+	/* display: none; */
 }
 .lbtn{
 	position: absolute;
@@ -303,9 +303,9 @@
 }
 .btn_list{
 	position: absolute;
-	bottom: 30px;
+	bottom: 0px;
 	width: 70px;
-	z-index: 3;
+	z-index: 1000;
 	right: 50%;
 }
 .btn_list li{
@@ -349,9 +349,13 @@
 	width: 854px;
 }
 .hot_car{
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	background: #fff;
 	width: 1226px;
 	height: 434px;
+	
 }
 .hot_car_right{
 	position: relative;
